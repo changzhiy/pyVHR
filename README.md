@@ -1,5 +1,7 @@
 <img src="https://raw.githubusercontent.com/phuselab/pyVHR/master/img/pyVHR-logo.png" alt="pyVHR logo" width="300"/>
 
+由于原仓库依赖太多，版本过时，且按照原步骤无法成功安装，因此创建了一个更便于部署的版本。
+
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyvhr)
 [![PyPI](https://img.shields.io/pypi/v/pyvhr)](https://pypi.org/project/pyVHR/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/phuselab/pyVHR)
