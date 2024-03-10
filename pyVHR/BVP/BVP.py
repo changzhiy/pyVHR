@@ -1,4 +1,3 @@
-import cupy
 import numpy as np
 import torch
 import sys
@@ -22,6 +21,7 @@ def signals_to_bvps_cuda(sig, cupy_method, params={}):
     Returns:
         float32 ndarray: BVP signal as float32 ndarray with shape [num_estimators, num_frames].
     """
+    cupy = None # 删除对cupy库的依赖，但是为了让代码不报错，这里设置cupy为None，我们并不会用到这里的代码
     if sig.shape[0] == 0:
         return np.zeros((0, sig.shape[2]), dtype=sig.dtype)
     gpu_sig = cupy.asarray(sig)
