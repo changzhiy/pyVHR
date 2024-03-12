@@ -28,36 +28,36 @@ Nine classical rPPG methods, namely  *ICA*,  *PCA*, *GREEN*, *CHROM*, *POS*, *SS
 
 ### Dependencies
 
+环境是torch 1.13，按照如下步骤全程大约20分钟。
+
 The quickest way to get started is to install the [miniconda](http://conda.pydata.org/miniconda.html) distribution, a lightweight minimal installation of Anaconda Python.
 
 Once installed, create a new `conda` environment and automatically fetch all the dependencies based on your architecture (with or without GPU), using one of the following commands:
 
-**CPU-only version** (v. 1.2 - previous version)
-```bash
-conda env create --file https://raw.githubusercontent.com/phuselab/pyVHR/pyVHR_CPU/pyVHR_CPU_env.yml
-```
 
 **CPU+GPU version** (v. 2.0 - current version)
 
 This yml environment is for cudatoolkit=11.3 and python=3.9.
 ```bash
-conda env create --file https://raw.githubusercontent.com/phuselab/pyVHR/master/pyVHR_env.yml
+conda env create --file dep.yml
 ```
 
 ### Installation
 
 Enter the newly created conda environment and install the latest stable release build of pyVHR with:
 
-**CPU-only version** (v. 1.2 - previous version)
-```bash
-conda activate pyvhr
-(pyvhr) pip install pyvhr-cpu
-```
 
 **CPU+GPU version** (v. 2.0 - current version)
 ```bash
 conda activate pyvhr
 (pyvhr) pip install pyvhr
+
+pip install mediapipe numba plotly ipywidgets pandas lmfit scikit-learn mediapipe torchvision opencv-python requests h5py biosppy tensorflow  scikit-image  scikit-posthocs autorank
+
+pip uninstall numpy
+
+pip install numpy==1.23.5
+
 ```
 
 ## Basic usage
