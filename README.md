@@ -39,6 +39,8 @@ Once installed, create a new `conda` environment and automatically fetch all the
 
 This yml environment is for cudatoolkit=11.3 and python=3.9.
 ```bash
+git clone https://github.com/changzhiy/pyVHR
+
 conda env create --file dep.yml
 ```
 
@@ -50,7 +52,6 @@ Enter the newly created conda environment and install the latest stable release 
 **CPU+GPU version** (v. 2.0 - current version)
 ```bash
 conda activate pyvhr
-(pyvhr) pip install pyvhr
 
 pip install mediapipe numba plotly ipywidgets pandas lmfit scikit-learn mediapipe torchvision opencv-python requests h5py biosppy tensorflow  scikit-image  scikit-posthocs autorank
 
