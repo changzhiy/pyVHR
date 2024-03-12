@@ -1,0 +1,13 @@
+name: pyvhr
+channels:
+  - pytorch
+  - rapidsai
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - cusignal
+  - hdf5
+  - pip
+  - pytables
+  - python=3.9.7
